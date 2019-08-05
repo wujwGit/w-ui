@@ -1,0 +1,33 @@
+page{
+  background-color:#f8f8f8;
+}
+/*顶部标题*/
+.list{
+  
+}
+.list .title{
+  color: #ccc;
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 10rpx 20rpx;
+  padding-bottom: 5rpx;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.option{
+  background-color: #fff;
+  font-size: 30rpx;
+  color: #343434;
+  padding-left: 20rpx;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.option:active{
+  background-color: #eee;
+}
+

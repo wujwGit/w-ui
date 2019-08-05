@@ -1,0 +1,21 @@
+
+<view class="list">
+  <view class="title" hover-class="navigator-click-active" >Wux UI</view>
+  <navigator hover-class="none" 
+          class="option" 
+          url="../index/index" >
+          <text> Demo </text>
+  </navigator>
+  <navigator class="option line-1px-e5-top" url="../index/index" >About</navigator>
+</view>
+<view class="list">
+  <view class="title">Color UI</view>
+  <navigator class="option" hover-class="none"  url="" >元素</navigator>
+  <navigator class="option line-1px-e5-top" url="" >组件</navigator>
+  <navigator class="option line-1px-e5-top" url="" >扩展</navigator>
+  <navigator class="option line-1px-e5-top" url="" >关于</navigator>
+</view>
+<view class="list">
+  <view class="title">Wuss UI</view>
+  <navigator class="option" url="" >组件</navigator>
+</view>

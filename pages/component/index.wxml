@@ -1,0 +1,6 @@
+<view class="list">
+  <view class="title" ></view>
+  <link url="../index/index" linkClass="option" >
+    link
+  </link>
+</view>

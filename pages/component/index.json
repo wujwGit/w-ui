@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "组件",
+  "usingComponents": {
+    "link":"/components/w-link/index"
+  }
+}

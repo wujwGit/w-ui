@@ -1,0 +1,5 @@
+<view  bindtap="toView">
+  <view class="{{linkClass}}">
+    <slot />
+  </view>
+</view>

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/component/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/API/index",
+    "pages/other/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "w-ui",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/component/index",
+        "text": "组件",
+        "iconPath": "images/tabbar/component.png",
+        "selectedIconPath": "images/tabbar/component_on.png"
+      },
+      {
+        "pagePath": "pages/API/index",
+        "text": "接口",
+        "iconPath": "images/tabbar/API.png",
+        "selectedIconPath": "images/tabbar/API_on.png"
+      },
+      {
+        "pagePath": "pages/other/index",
+        "text": "其他",
+        "iconPath": "images/tabbar/other.png",
+        "selectedIconPath": "images/tabbar/other_on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
