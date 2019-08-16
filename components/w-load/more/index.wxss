@@ -1,0 +1,66 @@
+@keyframes cuIcon-spin {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+
+	100% {
+		-webkit-transform: rotate(359deg);
+		transform: rotate(359deg);
+	}
+}
+.content-loadmore{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  height:100rpx;
+}
+/*提示：加载中*/
+.content-loadmore .loading::before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+	width: 14px;
+	height: 14px;
+	border-top: 2px solid rgba(0, 0, 0, 0.05);
+	border-right: 2px solid rgba(0, 0, 0, 0.05);
+	border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+	border-left: 2px solid rgba(127, 46, 39, 0.6);
+	animation: cuIcon-spin 0.7s infinite linear;
+	z-index: -1;
+  /* margin-top: 2px; */
+}
+.content-loadmore .loading::after{
+  padding-left: 25px;
+  content:"加载中...";
+  font-size: 25rpx;
+  color: #999;
+  
+}
+
+.content-loadmore .over::before,
+.content-loadmore .none::before {
+	content: "";
+  width: 0;
+	height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/*提示：我们是有底线的*/
+.content-loadmore .over::after{
+  content:"---------我们是有底线的---------";
+  font-size: 24rpx;
+  color: #999;
+   margin: 0;
+  padding: 0;
+}
+/*提示：没有更多了*/
+.content-loadmore .none::after{
+  content:"---------没有更多了---------";
+  font-size: 24rpx;
+  color: #999;
+   margin: 0;
+  padding: 0;
+}

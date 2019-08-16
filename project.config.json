@@ -48,13 +48,54 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
 					"name": "其他",
 					"pathName": "pages/other/index",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "无数据",
+					"pathName": "pages/component/load/noData",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "数据加载",
+					"pathName": "pages/component/load/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "横向行选择框",
+					"pathName": "pages/component/row-select/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索框",
+					"pathName": "pages/component/search/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "飞入购物车动画",
+					"pathName": "pages/component/fly-into-cart/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "生成二维码",
+					"pathName": "pages/component/qr-code/index",
 					"scene": null
 				}
 			]

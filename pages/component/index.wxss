@@ -11,7 +11,7 @@ page{
   font-weight: bold;
   padding: 10rpx 20rpx;
   padding-bottom: 5rpx;
-  height: 60rpx;
+  height: 70rpx;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -19,15 +19,12 @@ page{
 }
 .option{
   background-color: #fff;
-  font-size: 30rpx;
+  font-size: 28rpx;
   color: #343434;
   padding-left: 20rpx;
   height: 80rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.option:active{
-  background-color: #eee;
 }
 

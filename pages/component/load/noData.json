@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "没数据",
+  "usingComponents": {
+    "load-none": "/components/w-load/none/index"
+  }
+}

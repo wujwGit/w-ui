@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "动态生成二维码",
+  "usingComponents": {
+    "w-qrcode": "../../../components/w-qrcode/index"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "数据加载",
+  "usingComponents": {
+    "link": "/components/w-link/index",
+    "load-layer": "/components/w-load/layer/index",
+    "load-more": "/components/w-load/more/index"
+  }
+}

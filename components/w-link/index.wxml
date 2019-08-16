@@ -1,5 +1,3 @@
-<view  bindtap="toView">
-  <view class="{{linkClass}}">
+<view  bindtap="toView" class="{{wClass}}">
     <slot />
-  </view>
 </view>

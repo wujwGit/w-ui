@@ -4,7 +4,13 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/API/index",
-    "pages/other/index"
+    "pages/other/index",
+    "pages/component/load/noData",
+    "pages/component/load/index",
+    "pages/component/row-select/index",
+    "pages/component/search/index",
+    "pages/component/fly-into-cart/index",
+    "pages/component/qr-code/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

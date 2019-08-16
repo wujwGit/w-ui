@@ -1,0 +1,5 @@
+<view class='content-loadmore' style='height:{{height}}rpx;'>
+  <block  wx:if="{{isShow}}">
+    <text class="loading  {{infoClass}}"></text>
+  </block>
+</view>

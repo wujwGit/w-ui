@@ -1,0 +1,20 @@
+<view class="list">
+  <view class="title" >
+    <text class="title-top">Loading</text>
+    <text class="title-foot">数据加载</text>
+  </view>
+  <link url="./noData" w-class="option c-active" >
+    无数据
+  </link>
+  <view class="option x-border top c-active" bindtap="layer">
+    加载中提示
+  </view>
+  <view class="option x-border top c-active" bindtap="more">
+    加载更多提示
+  </view>
+</view>
+<!-- 加载更多组件 -->
+<load-more id="load-more"  />
+<!-- 数据加载组件 -->
+<load-layer id="load-layer" />
+

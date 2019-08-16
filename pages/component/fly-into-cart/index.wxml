@@ -1,0 +1,9 @@
+
+<!--飞入购物车  -->
+<view class="good_box" hidden="{{hide_good_box}}" style="left: {{bus_x}}px; top: {{bus_y}}px;">
+  <image src='../../../images/no-data.png' />
+</view>
+
+<view class="btn" bindtap="touchOnGoods">
+  加入购物车
+</view>

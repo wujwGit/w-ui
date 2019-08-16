@@ -14,6 +14,7 @@ Component({
    *                        navigateBack:关闭当前页面，返回上一页面或多级页面。
    * @param {number} delta   当linkType值为 navigateBack 时有效，表示返回页面层数(最多十层)
    * @param {boolean} disabled  禁用
+   * @param {string} linkClass 标签样式
    */
   properties: {
     url: {
@@ -32,7 +33,7 @@ Component({
       type: Boolean,
       value: false,
     },
-    linkClass:{
+    wClass:{
       type: String,
       value: '',
     }

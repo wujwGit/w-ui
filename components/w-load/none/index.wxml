@@ -1,0 +1,10 @@
+<view wx:if="{{show}}" class="w-content-no-data" style="margin-top:{{marginTop}}rpx">
+  <image wx:if="{{imgUrl}}" src="{{imgUrl}}" style="width:{{imgWidth}}rpx;height:{{imgHeight}}rpx" />
+  <view wx:else class="w-content-icon">
+    <text class="{{prefixIcon}} {{icon}} {{iconClass?iconClass:'_w-icon'}}" style="{{iconStyle}}"></text>
+  </view>
+  <view class="w-content-text">
+    <text class="{{textClass}}" style="{{textStyle}}">{{content}}</text>
+  </view>
+  <slot />
+</view>

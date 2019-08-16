@@ -1,0 +1,60 @@
+<view class="wui-content-search" >
+  <view class='wui-content-header' 
+        style="height:{{titleBarHeight}}px;padding-top:{{statusBarHeight}}px;padding-right:{{titleRight}}px;">
+    <view class="wui-header-back-icon" bindtap="onBack">
+      <w-icon icon="icon-fanhui2"/>
+    </view>
+    
+    <view class="wui-header-input" style="">
+      <icon size='15' type='search'></icon>
+      <input class="wui-search-input" 
+              type="text" 
+              placeholder="{{placeholder}}"
+              value="{{key}}" 
+              confirm-type="search" 
+              bindconfirm="search" 
+              focus="{{focus}}" 
+              bindfocus="show"
+              bindinput="searchkey">
+         <view class="wui-clear" bindtap="clearSearch" wx:if="{{showClear}}" ><w-icon icon="icon-qingchu1" color="#ccc"/></view>
+      </input>
+    </view>
+  </view>
+</view>
+<view class="wui-content-list" wx:if="{{show}}" style="top:{{customBar}}px;">
+  <!-- 搜索词记录 -->
+  <view class='wui-content-keys'>
+    <view class="wui-keys-title-bar">
+      <text class='wui-title-text'>历史记录</text>
+      <view class='wui-delete' 
+            bindtap='delKey' 
+            wx:if="{{historyKeys && historyKeys.length > 0}}">
+        清除
+      </view>
+    </view>
+    <view class="wui-content-key">
+      <view class='wui-key' 
+            wx:for="{{historyKeys}}" 
+            wx:key="index" 
+            bindtap='toNav'
+            data-type="history"
+            data-key="{{item}}">
+        {{item}}
+      </view>
+    </view>
+  </view>
+  <!-- 推荐搜索词 -->
+  <view class='wui-content-keys'>
+    <view wx:if="{{recommend&&recommend.length>0}}" class="wui-keys-title-bar">
+      <text class='wui-title-text'>搜索发现</text>
+    </view>
+    <view class='wui-key' 
+          wx:for="{{recommend}}" 
+          wx:key="index" 
+          bindtap='toNav' 
+          data-type="recommend"
+          data-key="{{item}}">{
+      {item}}
+    </view>
+  </view>
+</view>

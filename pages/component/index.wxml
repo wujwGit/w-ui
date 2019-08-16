@@ -1,6 +1,20 @@
 <view class="list">
-  <view class="title" ></view>
-  <link url="../index/index" linkClass="option" >
-    link
+  <view class="title" >操作反馈</view>
+  <link url="./load/index" w-class="option x-border top c-active" >
+    数据加载
+  </link>
+  <view class="title" >数据录入</view>
+  <link url="./row-select/index" w-class="option x-border top c-active" >
+    行选择框
+  </link>
+  <link url="./search/index" w-class="option x-border top-l2 c-active" >
+    搜索栏
+  </link>
+  <view class="title" >其它</view>
+  <link url="./fly-into-cart/index" w-class="option x-border top c-active" >
+    Fly into cart 飞入购物车动画
+  </link>
+  <link url="./qr-code/index" w-class="option x-border top c-active" >
+    生成二维码
   </link>
 </view>

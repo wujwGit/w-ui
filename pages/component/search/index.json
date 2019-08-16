@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "搜索框",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "w-search": "/components/w-search/index"
+  }
+}

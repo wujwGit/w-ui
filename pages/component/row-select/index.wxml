@@ -1,0 +1,47 @@
+
+
+<view class="wui-content-select">
+<view class="wui-screen"  
+    wx:if="{{dropDown=='true'}}" 
+    bindtap="dropDown" 
+    data-drop-down="false" />
+  <view class="wui-select-left">
+    <scroll-view class="wui-scroll-view" 
+                scroll-x
+                scroll-into-view="option{{checkedValue}}"
+                scroll-with-animation>
+      <view id="option{{item.value}}" 
+            class="wui-row-option" 
+            wx:for="{{options}}" 
+            wx:key
+            data-value="{{item.value}}"
+            bindtap="onSelectChange">
+        <view class="wui-option-title{{item.value==checkedValue?'--checked':''}}">
+          {{item.title}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="wui-select-right" bindtap="dropDown" data-drop-down="true">
+    <text class="icon iconfont icon-jian-tou"></text>
+  </view>
+  <view class="wui-drop-down" wx:if="{{dropDown=='true'}}" >
+    <view class="drop-down-top" bindtap="dropDown" data-drop-down="false">
+      <view class="top-left">
+        <text>全部</text>
+      </view>
+      <view class="top-right">
+        <text class="iconfont icon-jiantouarrow486"></text>
+      </view>
+    </view>
+    <view class="drop-down-content">
+      <view class="option{{item.value==checkedValue?'--checked':''}}" 
+            wx:for="{{options}}" 
+            wx:key 
+            bindtap="onSelectChange" 
+            data-value="{{item.value}}">
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+page{
+  background-color:#f8f8f8;
+}
+.textinput{
+  background-color: #fff;
+  height: 100rpx;
+  width: 100%;
+  margin-top: 100rpx;
+  padding: 30rpx;
+}
+.code{
+  display: flex;
+  justify-content: center;
+  padding-top: 200rpx;
+}
+

@@ -1,0 +1,10 @@
+<textarea class="textinput" value="{{ value }}" 
+    bindinput="bindinput" 
+    placeholder="支持文本、网址和电子邮箱"  /> 
+ <view class="code">
+  <w-qrcode id="qrcode" 
+      fg-color="{{ fgColor }}"
+      data="{{ value }}"  
+
+      bind:click="previewImage" />
+</view>

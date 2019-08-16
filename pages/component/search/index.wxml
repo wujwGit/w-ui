@@ -1,0 +1,2 @@
+<w-search bind:search="search" bind:back="back" bind:focus="focus" focus="{{true}}" placeholder="商品搜索" />
+搜索搜索
